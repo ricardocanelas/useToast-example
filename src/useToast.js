@@ -123,9 +123,9 @@ const Toaster = () => {
   const renderScreen = (direction) => {
     return (
       <span className={`toaster_screen-${direction}`}>
-        {getToasts(direction).map((toast, index) => (
+        {getToasts(direction).map((toast) => (
           <toast.Component
-            key={`${direction}-${index}`}
+            key={`${direction}-${toast.id}`}
             props={toast.props}
             remove={() => removeToast(toast.id)}
           />
