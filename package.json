@@ -1,7 +1,21 @@
 {
-  "name": "toast-example",
+  "name": "usetoast-example",
   "version": "0.1.0",
   "private": true,
+  "author": "Ricardo Canelas",
+  "license": "MIT",
+  "homepage": "https://ricardocanelas.github.io/useToast-example",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ricardocanelas/useToast-example"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -10,11 +24,8 @@
     "react-dom": "^16.14.0",
     "react-scripts": "3.4.3"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
 }
