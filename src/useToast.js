@@ -94,7 +94,7 @@ function useToast() {
   return context;
 }
 
-const Alert = ({ props, remove }) => {
+const Alert = ({ props, remove, id }) => {
   const handleRemove = () => {
     remove();
   };
@@ -126,6 +126,7 @@ const Toaster = () => {
         {getToasts(direction).map((toast) => (
           <toast.Component
             key={`${direction}-${toast.id}`}
+            id={toast.id}
             props={toast.props}
             remove={() => removeToast(toast.id)}
           />
