@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/useToast-example/static/css/main.871a673d.chunk.css",
+    "main.js": "/useToast-example/static/js/main.ea396f84.chunk.js",
+    "main.js.map": "/useToast-example/static/js/main.ea396f84.chunk.js.map",
+    "runtime-main.js": "/useToast-example/static/js/runtime-main.073b9c45.js",
+    "runtime-main.js.map": "/useToast-example/static/js/runtime-main.073b9c45.js.map",
+    "static/js/2.cb71d79b.chunk.js": "/useToast-example/static/js/2.cb71d79b.chunk.js",
+    "static/js/2.cb71d79b.chunk.js.map": "/useToast-example/static/js/2.cb71d79b.chunk.js.map",
+    "index.html": "/useToast-example/index.html",
+    "precache-manifest.654f3204ff303e3222866adecd44febe.js": "/useToast-example/precache-manifest.654f3204ff303e3222866adecd44febe.js",
+    "service-worker.js": "/useToast-example/service-worker.js",
+    "static/css/main.871a673d.chunk.css.map": "/useToast-example/static/css/main.871a673d.chunk.css.map",
+    "static/js/2.cb71d79b.chunk.js.LICENSE.txt": "/useToast-example/static/js/2.cb71d79b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.073b9c45.js",
+    "static/js/2.cb71d79b.chunk.js",
+    "static/css/main.871a673d.chunk.css",
+    "static/js/main.ea396f84.chunk.js"
+  ]
+}
