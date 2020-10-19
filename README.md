@@ -32,6 +32,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { ToastProvider } from "./useToast";
 
+import "./toaster.css";
+
 ReactDOM.render(
   <ToastProvider>
     <App />
