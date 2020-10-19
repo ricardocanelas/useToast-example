@@ -78,10 +78,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { ToastProvider } from "./useToast";
 
-const MyAlert = ({ props, remove }) => {
+const MyAlert = ({ props, remove, id }) => {
   return (
     <div>
-      {props.title}
+      {id} - {props.title}
       <button onClick={handleClick}>Add Toast</button>
     </div>
   );
