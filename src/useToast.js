@@ -102,11 +102,11 @@ const Alert = ({ props, remove, id }) => {
   const { title, variant = "primary" } = props;
 
   return (
-    <div className={`toaster__message alert alert-${variant}`}>
-      {title}
+    <div className={`toaster__message toaster__message--${variant}`}>
+      [{id}] {title}
       <button
         type="button"
-        className="close"
+        className="toaster__message__close"
         data-dismiss="alert"
         aria-label="Close"
         onClick={handleRemove}
