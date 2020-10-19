@@ -4,6 +4,7 @@ import { ToastProvider, Alert } from "./useToast";
 import App from "./App";
 
 import "./index.css";
+import "./toaster.css";
 
 const MyCustomAlert = Alert;
 

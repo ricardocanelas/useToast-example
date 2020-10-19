@@ -1,0 +1,171 @@
+.toaster_screen-top-left {
+  max-width: 560px;
+  position: fixed;
+  z-index: 5500;
+  pointer-events: none;
+  top: 0px;
+  left: 0px;
+}
+
+.toaster_screen-top {
+  max-width: 560px;
+  position: fixed;
+  z-index: 5500;
+  pointer-events: none;
+  margin: 0px auto;
+  text-align: center;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toaster_screen-top-right {
+  max-width: 560px;
+  position: fixed;
+  z-index: 5500;
+  pointer-events: none;
+  top: 0px;
+  right: 0px;
+}
+
+.toaster_screen-bottom-left {
+  max-width: 560px;
+  position: fixed;
+  z-index: 5500;
+  pointer-events: none;
+  bottom: 0px;
+  left: 0px;
+}
+
+.toaster_screen-bottom {
+  max-width: 560px;
+  position: fixed;
+  z-index: 5500;
+  pointer-events: none;
+  margin: 0px auto;
+  text-align: center;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.toaster_screen-bottom-right {
+  max-width: 560px;
+  position: fixed;
+  z-index: 5500;
+  pointer-events: none;
+  bottom: 0px;
+  right: 0px;
+}
+
+/** TOASTER MESSAGE **/
+
+.toaster__message {
+  pointer-events: auto;
+  width: 160px;
+  max-width: 160px;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+
+.toaster__message--primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+.toaster__message--secondary {
+  color: #383d41;
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+}
+.toaster__message--success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.toaster__message--danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.toaster__message--warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+.toaster__message--info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+.toaster__message--light {
+  color: #818182;
+  background-color: #fefefe;
+  border-color: #fdfdfe;
+}
+.toaster__message--dark {
+  color: #1b1e21;
+  background-color: #d6d8d9;
+  border-color: #c6c8ca;
+}
+
+.toaster__message__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0.9rem;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+}
+
+/** TOASTER MESSAGE ANIMATION **/
+
+.toaster_screen-top .toaster__message,
+.toaster_screen-top-left .toaster__message,
+.toaster_screen-top-right .toaster__message {
+  animation: _toasterFadeInDown 0.5s;
+}
+
+.toaster_screen-bottom .toaster__message,
+.toaster_screen-bottom-left .toaster__message,
+.toaster_screen-bottom-right .toaster__message {
+  animation: _toasterfadeInUp 0.5s;
+}
+
+@keyframes _toasterFadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes _toasterfadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
