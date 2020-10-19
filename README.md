@@ -81,7 +81,7 @@ import { ToastProvider } from "./useToast";
 const MyAlert = ({ props, remove }) => {
   return (
     <div>
-      props.title
+      {props.title}
       <button onClick={handleClick}>Add Toast</button>
     </div>
   );
